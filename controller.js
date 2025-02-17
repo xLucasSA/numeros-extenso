@@ -5,7 +5,7 @@ async function convertNumber(req, res) {
 
   number = number.toString();
 
-  if (isNaN(number) || !number.trim())
+  if (isNaN(number) || !number.trim() || number.indexOf(".") != -1)
     return res.status(400).json({ message: "Favor inserir um número válido" });
 
   if (number.length >= 67)

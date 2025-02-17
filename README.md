@@ -32,12 +32,12 @@ link da api: ec2-18-117-89-11.us-east-2.compute.amazonaws.com
   - body:
   ```json
   {
-    "number": 123
+    "number": 123.15
   }
   ```
   - response:
   ```json
   {
-    "message": "cento e vinte e três"
+    "message": "Favor inserir um número válido"
   }
   ```
