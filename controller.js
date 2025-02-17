@@ -1,7 +1,9 @@
 const { toWords } = require("./utils");
 
 async function convertNumber(req, res) {
-  const { number } = req.body;
+  let { number } = req.body;
+
+  number = number.toString();
 
   if (isNaN(number) || !number.trim())
     return res.status(400).json({ message: "Favor inserir um número válido" });

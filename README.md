@@ -8,20 +8,36 @@ link da api: ec2-18-117-89-11.us-east-2.compute.amazonaws.com
 /number
 ```
 
-- método: **POST**
+- Ok response:
 
-- body:
+  - método: **POST**
+  - body:
 
-```json
-{
-  "number": 123
-}
-```
+  ```json
+  {
+    "number": 123
+  }
+  ```
 
-- resposta:
+  - response:
 
-```json
-{
-  "message": "cento e vinte e três"
-}
-```
+  ```json
+  {
+    "message": "cento e vinte e três"
+  }
+  ```
+
+- NOT OK response:
+  - método: **POST**
+  - body:
+  ```json
+  {
+    "number": 123
+  }
+  ```
+  - response:
+  ```json
+  {
+    "message": "cento e vinte e três"
+  }
+  ```
