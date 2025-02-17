@@ -3,7 +3,7 @@ const { toWords } = require("./utils");
 async function convertNumber(req, res) {
   const { number } = req.body;
 
-  if (isNaN(number))
+  if (isNaN(number) || !number.trim())
     return res.status(400).json({ message: "Favor inserir um número válido" });
 
   if (number.length >= 67)
